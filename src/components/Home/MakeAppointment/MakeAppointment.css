@@ -1,0 +1,24 @@
+.section-container {
+  height: 420px;
+  position: relative;
+  background-image: url("../../../images/chairBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 100px;
+}
+.section-container::before {
+  height: 100%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: block;
+  background-color: rgb(36, 41, 73);
+  /* opacity: 0.9; */
+  z-index: -2;
+}
+.section-container img{
+  height: 550px;
+  transform: translateY(-130px);
+}
